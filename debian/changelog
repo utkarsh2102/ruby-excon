@@ -1,0 +1,66 @@
+ruby-excon (0.33.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Skip local ports reuse tests (Closes: #751037)
+
+ -- Pirate Praveen <praveen@debian.org>  Fri, 27 Jun 2014 20:32:33 +0530
+
+ruby-excon (0.33.0-1) unstable; urgency=low
+
+  * Team upload
+  * New upstream release
+  * Add unicorn as build dep (Closes: 746079)
+
+ -- Pirate Praveen <praveen@debian.org>  Tue, 20 May 2014 15:01:06 +0530
+
+ruby-excon (0.32.1-1) unstable; urgency=low
+
+  * Team upload
+  * New upstream release
+  * Build dep on ruby-activesupport instead of ruby-activesupport-3.2
+
+ -- Pirate Praveen <praveen@debian.org>  Mon, 14 Apr 2014 10:58:32 +0530
+
+ruby-excon (0.31.0-1) unstable; urgency=low
+
+  * Team upload
+  * New upstream release
+  * Refresh patches
+  * Bump standards version to 3.9.5 (no changes)
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Tue, 14 Jan 2014 18:44:24 +0530
+
+ruby-excon (0.25.1-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Laurent Bigonville <bigon@debian.org>  Sat, 06 Jul 2013 23:48:43 +0200
+
+ruby-excon (0.21.0-1) unstable; urgency=low
+
+  * Team upload
+  * New upstream release
+  * std version bunped to 3.9.4
+  * Update build dependencies (gem2deb (>= 0.3.0~), rake, ruby-rspec, 
+    ruby-chronic, ruby-shindo, ruby-sinatra, ruby-open4, ruby-activesupport,
+     ruby-delorean, ruby-eventmachine)
+  * debian/patches/02_remove_gemfile_lock.patch: Remove Gemfile.lock
+  * debian/patches/03_remove_rubygems_bundler_add_requires_from_gemspec.patch:
+    Remove rubygems and bundler, add require lines instead of Bundler.require
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Thu, 16 May 2013 20:49:12 +0530
+
+ruby-excon (0.13.4-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/patches/01_use_ca-certificates.patch: Use SSL certificates from
+    ca-certificates package
+  * debian/control: Recommends ca-certificates package
+
+ -- Laurent Bigonville <bigon@debian.org>  Tue, 17 Apr 2012 17:46:25 +0200
+
+ruby-excon (0.10.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #647076)
+
+ -- Laurent Bigonville <bigon@debian.org>  Wed, 07 Mar 2012 16:36:21 +0100

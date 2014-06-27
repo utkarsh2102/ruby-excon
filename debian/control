@@ -1,0 +1,25 @@
+Source: ruby-excon
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Laurent Bigonville <bigon@debian.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb (>= 0.3.0~), rake, ruby-rspec, ruby-chronic,
+ ruby-shindo, ruby-sinatra, ruby-open4, ruby-activesupport, ruby-delorean, ruby-eventmachine,
+ unicorn
+Standards-Version: 3.9.5
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-excon.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-excon.git;a=summary
+Homepage: https://github.com/geemus/excon
+XS-Ruby-Versions: all
+
+Package: ruby-excon
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${shlibs:Depends}, ${misc:Depends}, ruby | ruby-interpreter
+Recommends: ca-certificates
+Description: Ruby library for creating fast, persistent, HTTP(S) connections
+ Ruby library for creating fast HTTP(S) connections, it supports:
+  * GET/POST/PUT/DELETE/HEAD/TRACE/OPTIONS/CONNECT methods via HTTP/1.1
+  * HTTPS (SSL) connections
+  * Proxy and keep-alive connections
+  * Multitreading and streaming download

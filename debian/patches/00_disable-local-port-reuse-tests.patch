@@ -1,0 +1,13 @@
+Index: ruby-excon/tests/basic_tests.rb
+===================================================================
+--- ruby-excon.orig/tests/basic_tests.rb
++++ ruby-excon/tests/basic_tests.rb
+@@ -120,7 +120,7 @@ Shindo.tests('Excon basics (Unix socket)
+   end
+ end
+ 
+-Shindo.tests('Excon basics (reusable local port)') do
++Shindo.tests('Excon basics (reusable local port)', 'localportreuse') do
+   class CustomSocket < Socket
+     def initialize
+       super(AF_INET, SOCK_STREAM, 0)

@@ -1,0 +1,3 @@
+00_disable-local-port-reuse-tests.patch
+01_use_ca-certificates.patch
+03_remove_rubygems_bundler_add_requires_from_gemspec.patch
