@@ -1,0 +1,251 @@
+--- !ruby/object:Gem::Specification
+name: excon
+version: !ruby/object:Gem::Version
+  version: 0.33.0
+platform: ruby
+authors:
+- dpiddy (Dan Peterson)
+- geemus (Wesley Beary)
+- nextmat (Matt Sanders)
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2014-04-15 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: activesupport
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: delorean
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: eventmachine
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: open4
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: rake
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: rdoc
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: shindo
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: sinatra
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ! '>='
+      - !ruby/object:Gem::Version
+        version: '0'
+description: EXtended http(s) CONnections
+email: geemus@gmail.com
+executables: []
+extensions: []
+extra_rdoc_files:
+- README.md
+files:
+- CONTRIBUTING.md
+- CONTRIBUTORS.md
+- Gemfile
+- Gemfile.lock
+- LICENSE.md
+- README.md
+- Rakefile
+- benchmarks/class_vs_lambda.rb
+- benchmarks/concat_vs_insert.rb
+- benchmarks/concat_vs_interpolate.rb
+- benchmarks/cr_lf.rb
+- benchmarks/downcase-eq-eq_vs_casecmp.rb
+- benchmarks/excon.rb
+- benchmarks/excon_vs.rb
+- benchmarks/for_vs_array_each.rb
+- benchmarks/for_vs_hash_each.rb
+- benchmarks/has_key-vs-lookup.rb
+- benchmarks/headers_case_sensitivity.rb
+- benchmarks/headers_split_vs_match.rb
+- benchmarks/implicit_block-vs-explicit_block.rb
+- benchmarks/merging.rb
+- benchmarks/single_vs_double_quotes.rb
+- benchmarks/string_ranged_index.rb
+- benchmarks/strip_newline.rb
+- benchmarks/vs_stdlib.rb
+- changelog.txt
+- data/cacert.pem
+- excon.gemspec
+- lib/excon.rb
+- lib/excon/connection.rb
+- lib/excon/constants.rb
+- lib/excon/errors.rb
+- lib/excon/headers.rb
+- lib/excon/middlewares/base.rb
+- lib/excon/middlewares/decompress.rb
+- lib/excon/middlewares/escape_path.rb
+- lib/excon/middlewares/expects.rb
+- lib/excon/middlewares/idempotent.rb
+- lib/excon/middlewares/instrumentor.rb
+- lib/excon/middlewares/mock.rb
+- lib/excon/middlewares/redirect_follower.rb
+- lib/excon/middlewares/response_parser.rb
+- lib/excon/response.rb
+- lib/excon/socket.rb
+- lib/excon/ssl_socket.rb
+- lib/excon/standard_instrumentor.rb
+- lib/excon/unix_socket.rb
+- lib/excon/utils.rb
+- tests/authorization_header_tests.rb
+- tests/bad_tests.rb
+- tests/basic_tests.rb
+- tests/data/excon.cert.crt
+- tests/data/excon.cert.key
+- tests/data/xs
+- tests/errors_tests.rb
+- tests/header_tests.rb
+- tests/middlewares/canned_response_tests.rb
+- tests/middlewares/decompress_tests.rb
+- tests/middlewares/escape_path_tests.rb
+- tests/middlewares/idempotent_tests.rb
+- tests/middlewares/instrumentation_tests.rb
+- tests/middlewares/mock_tests.rb
+- tests/middlewares/redirect_follower_tests.rb
+- tests/pipeline_tests.rb
+- tests/proxy_tests.rb
+- tests/query_string_tests.rb
+- tests/rackups/basic.rb
+- tests/rackups/basic.ru
+- tests/rackups/basic_auth.ru
+- tests/rackups/deflater.ru
+- tests/rackups/proxy.ru
+- tests/rackups/query_string.ru
+- tests/rackups/request_headers.ru
+- tests/rackups/request_methods.ru
+- tests/rackups/response_header.ru
+- tests/rackups/ssl.ru
+- tests/rackups/ssl_verify_peer.ru
+- tests/rackups/thread_safety.ru
+- tests/rackups/timeout.ru
+- tests/rackups/webrick_patch.rb
+- tests/request_headers_tests.rb
+- tests/request_method_tests.rb
+- tests/request_tests.rb
+- tests/response_tests.rb
+- tests/servers/bad.rb
+- tests/servers/eof.rb
+- tests/servers/error.rb
+- tests/servers/good.rb
+- tests/test_helper.rb
+- tests/thread_safety_tests.rb
+- tests/timeout_tests.rb
+- tests/utils_tests.rb
+homepage: https://github.com/geemus/excon
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options:
+- --charset=UTF-8
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ! '>='
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: excon
+rubygems_version: 2.2.2
+signing_key: 
+specification_version: 2
+summary: speed, persistence, http(s)
+test_files: []
