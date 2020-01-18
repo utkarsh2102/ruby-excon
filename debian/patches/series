@@ -2,4 +2,4 @@
 01_use_ca-certificates.patch
 03_remove_rubygems_bundler_add_requires_from_gemspec.patch
 CVE-2019-16779.patch
-renew-openssl-cert.patch
+update-certs.patch
